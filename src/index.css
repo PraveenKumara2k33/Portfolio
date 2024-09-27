@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  background-color: black;
+  font-family: serif;
+  color: white;
+}
+:root{
+  --apk-theme-primary: #8750f7;
+  --apk-theme-secondary:#2a1454;
+}
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--apk-theme-primary) var(--apk-theme-secondary);
+}
+/* App.css or global CSS */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: default; /* Ensure the default cursor */
+}
+
+/* Ensure that only CognizantPage disables the cursor */
+.cognizant-page {
+  cursor: none;
+}

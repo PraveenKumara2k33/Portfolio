@@ -1,0 +1,40 @@
+.velammal-page {
+  display: flex;
+  justify-content: space-between; /* Equal space between the chart and content */
+  align-items: flex-start;
+  padding: 20px; /* Add some padding */
+}
+
+.velammal-chart {
+  flex: 1; /* Take equal width */
+  margin-right: 20px; /* Space between chart and content */
+}
+
+.velammal-content {
+  flex: 1; /* Take equal width */
+  color: #ffffff; /* Ensure white text for black background */
+  text-align: start;
+}
+.Ayyanar-chart{
+  width: 500px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .velammal-page {
+      flex-direction: column; /* Stack the chart and content vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .velammal-chart {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 20px; /* Space below the chart */
+  }
+
+  .velammal-content {
+      width: 100%; /* Make content full width */
+  }
+  .AyyanarPage{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,199 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none; /* Remove default list styles */
+}
+
+/* Card container styling */
+.cards {
+  position: relative;
+  overflow: hidden; /* Hide any overflow content */
+  padding: 0; /* Ensure no padding is causing extra space */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Reset card margin to avoid extra white space */
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25em;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+  margin: 0; /* Remove margin to avoid extra white space */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Specific card colors */
+.card:nth-child(1) {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
+.card:nth-child(2) {
+  --hue: 291.34;
+  --saturation: 95.9%;
+  --lightness: 61.76%;
+}
+
+.card:nth-child(3) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card:nth-child(4) {
+  --hue: 238.69;
+  --saturation: 100%;
+  --lightness: 58.04%;
+}
+
+.card:nth-child(5) {
+  --hue: 48;
+  --saturation: 100%;
+  --lightness: 70.04%;
+}
+
+.card:nth-child(6) {
+  --hue: 315.1;
+  --saturation: 89%;
+  --lightness: 50%;
+}
+
+/* Bullet points using TiTick icon */
+.card__bullets {
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em; /* Space between items */
+}
+
+.card__bullets .bullet {
+  display: flex;
+  align-items: start; /* Align icon and text vertically */
+  text-align: start;
+}
+.bullet-icon {
+  width: 24px !important;  /* Set the desired fixed width */
+  height: 24px !important; /* Set the desired fixed height */
+  font-size: 24px !important; /* Ensure consistent icon size */
+  flex-shrink: 0;  /* Prevent shrinking in flex containers */
+}
+
+.card__bullets .bullet-icon {
+  color: #dddddd; /* Match icon color */
+  margin-right: 0.5em; /* Space between icon and text */
+}
+
+/* Heading and price styles */
+.card__heading {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.card__price {
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+/* CTA styles */
+.cta {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d0d0d;
+  padding: 0.7em;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--opacity, 0);
+  -webkit-mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+.overlay .card {
+  background-color: hsla(var(--hsl), 0.15);
+  border-color: hsla(var(--hsl), 1);
+  box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+}
+
+.overlay .cta {
+  display: block;
+  grid-row: -1;
+  width: 100%;
+  background-color: hsl(var(--hsl));
+  box-shadow: 0 0 0 1px hsl(var(--hsl));
+}
+
+/* Hover effects */
+:not(.overlay) > .card {
+  transition: background 400ms ease, box-shadow 400ms ease;
+}
+
+:not(.overlay) > .card:hover {
+  --lightness: 95%;
+  background: hsla(var(--hsl), 0.1);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3); /* Example shadow effect on hover */
+}
+
+/* Responsive Grid */
+.cards__inner {
+  display: grid;
+  gap: 20px;
+  width: 100%; /* Ensure it uses full width */
+  margin: 0 auto; /* Center grid and remove extra margin */
+}
+
+/* 1 by 1 card for phones */
+@media (max-width: 600px) {
+  .cards__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2 by 2 card for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cards__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 by 3 card for laptops and desktops */
+@media (min-width: 1025px) {
+  .cards__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

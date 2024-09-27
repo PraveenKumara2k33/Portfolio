@@ -1,0 +1,31 @@
+.accordion-button {
+  background-color: black;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button::after {
+  filter: invert(1); /* Inverts the chevron color to white */
+}
+
+.accordion-item-custom.active .accordion-button {
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  color: white;
+}
+
+.accordion-item-custom .accordion-button:not(.collapsed) {
+  background-color: black;
+  color: white;
+}
+
+.accordion-body ul {
+  list-style-type: decimal;
+  margin-left: 20px;
+  color: white;
+}
+
+.accordion-body li {
+  margin-bottom: 10px;
+}

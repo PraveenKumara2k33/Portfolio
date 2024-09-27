@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .bg-custom {
+    background-color: #e3f3f3;
+} */
+
+.navbar-logo {
+    width: 50px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+@layer components {
+    .navbtn {
+      @apply px-4 font-medium !important;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .navbtn:hover {
+      @apply border-sky-100 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-3xl transition duration-700 ease-in-out;
+    }
+
+    .navbtn.active {
+      @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-3xl !important; /* Increased specificity */
+    }
+
+    .navbtn.active:hover {
+      @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white !important; /* Ensure hover state stays white */
+    }
+
+    /* Media query for mobile devices (320px to 425px) */
+    @media (max-width: 425px) {
+        /* Add staggered transition delay for each section */
+        .navbtn{
+            @apply font-serif;
+        }
+        .navbtn:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .navbtn:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .navbtn:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .navbtn:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .navbtn:nth-child(5) {
+            transition-delay: 0.5s;
+        }
+
+        .navbtn:nth-child(6) {
+            transition-delay: 0.6s;
+        }
+
+        /* Add zoom effect on hover */
+        .navbtn:hover {
+            transform: scale(1.1); /* Zoom in */
+        }
+
+        .navbtn.active:hover {
+            transform: scale(1.05); /* Slightly zoom when active */
+        }
+    }
+}

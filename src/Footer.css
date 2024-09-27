@@ -1,0 +1,88 @@
+.footer-section {
+    margin-top: 100px;
+    padding: 40px 0;
+    background-color: #111;
+    color: white;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .footer-text, .footer-link {
+    font-size: 14px;
+    text-align: left;
+    color: white;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #088178;
+  }
+  
+  .footer-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .follow {
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #b3b3b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .colfex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .contact-follow-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .contact-follow-wrapper .contact,
+    .contact-follow-wrapper .follow {
+      width: 48%; /* Each section takes half the width */
+    }
+  
+    .footer-icons {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .follow {
+      margin-top: 0;
+    }
+  }
+  
