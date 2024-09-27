@@ -1,40 +1,43 @@
 .velammal-page {
   display: flex;
-  justify-content: space-between; /* Equal space between the chart and content */
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 20px; /* Add some padding */
+  padding: 20px;
 }
 
 .velammal-chart {
-  flex: 1; /* Take equal width */
-  margin-right: 20px; /* Space between chart and content */
+  flex: 1;
+  margin-right: 20px;
 }
 
 .velammal-content {
-  flex: 1; /* Take equal width */
-  color: #ffffff; /* Ensure white text for black background */
+  flex: 1;
+  color: #ffffff;
   text-align: start;
 }
-.Ayyanar-chart{
+
+.Ayyanar-chart {
   width: 500px;
 }
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .velammal-page {
-      flex-direction: column; /* Stack the chart and content vertically */
-      align-items: center; /* Center align items */
+    flex-direction: column;
+    align-items: center;
   }
 
   .velammal-chart {
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 20px; /* Space below the chart */
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .velammal-content {
-      width: 100%; /* Make content full width */
+    width: 100%;
   }
-  .AyyanarPage{
-    display: flex;
-    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .Ayyanar-chart {
+    width: 300px; /* Adjust the chart width for mobile */
   }
 }

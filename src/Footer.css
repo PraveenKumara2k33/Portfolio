@@ -85,4 +85,18 @@
       margin-top: 0;
     }
   }
-  
+  @media (max-width: 600px){
+    .footer-link{
+      font-size: 10px;
+      font-weight: 900;
+    }
+    .footer-icon{
+      height: 22px !important;
+    }
+    .footer-text{
+      font-size: 12px;
+    }
+    .footer-text{
+      font-size: 14px;
+    }
+  }

@@ -1,8 +1,23 @@
+import { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import './VelammalPage.css'; // Link to the custom CSS file
 
 const VelammalPage = () => {
-  const options = {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const barChartOptions = {
     chart: {
       id: "basic-bar",
       toolbar: {
@@ -56,17 +71,61 @@ const VelammalPage = () => {
     }
   };
 
-  const series = [
-    {
-      name: "series-1",
-      data: [7.1, 9, 8.4, 9.5, 9.1, 7.9, 8, 8.6]
-    }
-  ];
+  const donutChartOptions = {
+    chart: {
+      id: "basic-donut", // Donut chart type
+      toolbar: {
+        show: false
+      },
+      foreColor: "#ffffff", // Set text color to white
+    },
+    colors: ["#0000FF", "#008000", "#FF0000", "#EE82EE", "#FFA500", "#4B0082", "#008080", "#A9A9A9"], // Individual colors
+    labels: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"], // Donut chart labels
+    plotOptions: {
+      pie: {
+        donut: {
+          size: '65%', // Adjust the size of the donut for mobile view
+        },
+        dataLabels: {
+          enabled: true, // Enable data labels
+          formatter: function (val, opts) {
+            return `${opts.w.config.series[opts.seriesIndex]}`; // Display exact values
+          },
+          style: {
+            fontSize: '14px',
+            colors: ['#FFFFFF'] // White color for the data labels
+          }
+        }
+      }
+    },
+    tooltip: {
+      enabled: true,
+      y: {
+        formatter: function (val) {
+          return `${val}`; // Display exact values in tooltips
+        }
+      }
+    },
+    responsive: [{
+      breakpoint: 600,
+      options: {
+        chart: {
+          width: '100%' // Make chart width responsive for mobile
+        }
+      }
+    }]
+  };
+
+  const series = [7.1, 9, 8.4, 9.5, 9.1, 7.9, 8, 8.6]; // Data for both charts
 
   return (
     <div className="velammal-page">
       <div className="velammal-chart">
-        <Chart options={options} series={series} type="bar" width="500" />
+        {isMobile ? (
+          <Chart options={donutChartOptions} series={series} type="donut" width="300" />
+        ) : (
+          <Chart options={barChartOptions} series={[{ name: "series-1", data: series }]} type="bar" width="500" />
+        )}
       </div>
       <div className="velammal-content">
         <h1 className="text-center font-extrabold text-4xl">Velammal Institute of Technology</h1>
@@ -84,8 +143,9 @@ const VelammalPage = () => {
             <li><strong>Research Publication:</strong> Authored and published a paper titled &quot;Black Box for Vehicle to Track Performance and Driving Behavior&quot;.</li>
           </ul>
         </div>
+
         <div className="mt-4">
-        <h4 className="font-bold text-3xl">Certifications</h4>
+          <h4 className="font-bold text-3xl">Certifications</h4>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li>Java, CSS, SQL, and React, earned through HackerRank.</li>
             <li>Extensive coding practice and problem-solving through <a href="https://www.skillrack.com/faces/resume.xhtml?id=320627&key=b613186118ca2f8cfe1ceba5d9d4b9614c38cfda" target="_blank" rel="noopener noreferrer" className="underline decoration-pink-500 hover:bg-pink-500 hover:p-2">Skillrack</a> and <a href="https://www.hackerrank.com/profile/apraveenkumar720" target="_blank" rel="noopener noreferrer" className="underline decoration-teal-400 hover:bg-teal-400 hover:p-2">HackerRank</a> platforms.</li>

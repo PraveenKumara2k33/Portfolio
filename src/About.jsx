@@ -53,12 +53,12 @@ const Hero = () => {
     </p>
 
     <div className="flex space-x-3 mt-4 divlinks">
-      <a href="https://www.linkedin.com/in/praveenkumar2k33/" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaLinkedinIn /></a>
-      <a href="https://github.com/PraveenKumara2k33" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaGithub /></a>
-      <a href="https://www.hackerrank.com/profile/apraveenkumar720" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaHackerrank /></a>
-      <a href="https://leetcode.com/u/apraveenkumar/" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><SiLeetcode /></a>
-      <a href="https://www.skillrack.com/faces/resume.xhtml?id=320627&key=b613186118ca2f8cfe1ceba5d9d4b9614c38cfda" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><TbLetterS /></a>
-      <a href="https://www.instagram.com/apk2k/" target="_blank" className="border p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaInstagram /></a>
+      <a href="https://www.linkedin.com/in/praveenkumar2k33/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaLinkedinIn className='abouticon' /></a>
+      <a href="https://github.com/PraveenKumara2k33" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaGithub className='abouticon' /></a>
+      <a href="https://www.hackerrank.com/profile/apraveenkumar720" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaHackerrank className='abouticon' /></a>
+      <a href="https://leetcode.com/u/apraveenkumar/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><SiLeetcode className='abouticon' /></a>
+      <a href="https://www.skillrack.com/faces/resume.xhtml?id=320627&key=b613186118ca2f8cfe1ceba5d9d4b9614c38cfda" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><TbLetterS className='abouticon' /></a>
+      <a href="https://www.instagram.com/apk2k/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaInstagram className='abouticon' /></a>
     </div>
 
     <div className="flex py-7">

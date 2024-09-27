@@ -1,8 +1,8 @@
 /* Reset default margin and padding */
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
-}
+} */
 
 ul {
   list-style: none; /* Remove default list styles */
@@ -181,6 +181,9 @@ ul {
 @media (max-width: 600px) {
   .cards__inner {
     grid-template-columns: 1fr;
+  }
+  .cards__card{
+    font-size: 12px;
   }
 }
 

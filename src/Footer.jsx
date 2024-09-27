@@ -22,22 +22,18 @@ const Footer = () => {
           <Col md={4} xs={5}>
             <h4 className="footer-heading">NavBar</h4>
             <Nav className="footer-nav">
-              <Nav.Link as={Link} smooth to="/#" className="footer-link">Home</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#qualification" className="footer-link">Qualification</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#skills" className="footer-link">Skills</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#projects" className="footer-link">Projects</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#publication" className="footer-link">Publications</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#" className="footer-text">Home</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#qualification" className="footer-text">Qualification</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#skills" className="footer-text">Skills</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#projects" className="footer-text">Projects</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#publication" className="footer-text">Publications</Nav.Link>
             </Nav>
           </Col>
 
           <Col md={4} xs={5}>
             <h4 className="footer-heading">About</h4>
             <p className="footer-text">
-              Dynamic software developer with over a year of experience in front-end, WordPress, and Java technologies. 
-              Completed a Java Trainee program at Cognizant, strengthening skills in HTML, CSS, JavaScript, SQL, Core Java, 
-              JSP, Servlets, and Spring Boot. At Senchola Technology Solutions, contributed to responsive apps and optimized 
-              restaurant operations, improving efficiency and cutting costs. Skilled in creating user-focused designs and innovative
-              solutions. Ready to apply technical expertise to new challenges.
+              I create user-centered, responsive applications and craft innovative solutions that drive business growth and enhance brand awareness.
             </p>
           </Col>
 
@@ -46,8 +42,7 @@ const Footer = () => {
               <div className="contact">
                 <h4 className="footer-heading">Contact Us</h4>
                 <p className="footer-text flex">
-                  <img src={MailLogo} className="footer-icon h-8" alt="Mail Logo" />
-                  <a href="mailto:apraveenkumar720@gmail.com" className="footer-link">apraveenkumar720@gmail.com</a>
+                  <a href="mailto:apraveenkumar720@gmail.com" className="footer-link mx-8"><img src={MailLogo} className="footer-icon h-8" alt="Mail Logo" /></a>
                 </p>
               </div>
               <div className="follow">

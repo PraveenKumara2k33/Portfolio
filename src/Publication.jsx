@@ -18,7 +18,7 @@ const Publication = () => {
         <h1 className="font-serif text-5xl my-5 text-white">Publications</h1>
         <div className='flex flex-wrap'>
           <div className='w-full md:w-1/2'>
-            <img src={BlackBoxLogo} className='h-3/4 rounded-2xl m-5 fixed-size' alt="Black Box" />
+            <img src={BlackBoxLogo} className='h-3/4 rounded-2xl m-5 iotimage' alt="Black Box" />
           </div>
           <div className='w-full md:w-1/2'>
             <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key === activeKey ? null : key)} flush>
@@ -40,11 +40,11 @@ const Publication = () => {
                     <li>Keywords: IoT, sensors, black box, theft protection, GSM, GPS tracking.</li>
                   </ul>
                   <div className='flex justify-center space-x-5 text-2xl'>
-                    <a href="https://ieeexplore.ieee.org/document/10099824" target="_blank" rel="noopener noreferrer" className='text-white border p-3 mt-4 flex'>
-                      Publication <GoArrowUpRight className='ml-3 text-center mt-1 font-bold' />
+                    <a href="https://ieeexplore.ieee.org/document/10099824" target="_blank" rel="noopener noreferrer" className='text-white border md:p-3 md:mt-4 flex publicationbox'>
+                      Publication <GoArrowUpRight className='ml-3 text-center mt-1 sm:font-bold pubicon' />
                     </a>
-                    <a href="./assets/Vehicle Surveillance and Tracking - IEEE.doc" download className='text-white border p-3 mt-4 flex'>
-                      View Docs <FaArrowDown className='ml-3 align-middle mt-1 font-bold' />
+                    <a href="./assets/Vehicle Surveillance and Tracking - IEEE.doc" download className='text-white border md:p-3 md:mt-4 flex publicationbox'>
+                      View Docs <FaArrowDown className='ml-3 align-middle mt-1 md:font-bold pubicon' />
                     </a>
                   </div>
                 </Accordion.Body>
