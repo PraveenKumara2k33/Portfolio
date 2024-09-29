@@ -128,7 +128,7 @@ const VelammalPage = () => {
         )}
       </div>
       <div className="velammal-content">
-        <h1 className="text-center font-extrabold text-4xl">Velammal Institute of Technology</h1>
+        <h1 className="text-center font-extrabold text-4xl ">Velammal Institute of Technology</h1>
         <div className="mt-3">
           <h3><strong>Degree:</strong> Bachelor of Technology (B.Tech)</h3>
           <p><strong>Stream:</strong> Information Technology (IT)</p>

@@ -126,7 +126,7 @@ const Project = () => {
 
   return (
     <div className="main flow Project" id='Project'>
-      <h1 className="main__heading text-5xl my-4">Projects</h1>
+      <h1 className="main__heading text-5xl my-4 ProjectHeading">Projects</h1>
       <div className="main__cards cards" ref={cardsContainerRef}>
         <div className="cards__inner">
           {cardData.map(({ title, subtitle, features, cta, link }, index) => (

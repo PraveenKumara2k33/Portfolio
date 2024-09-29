@@ -49,7 +49,7 @@ const Skills = () => {
   return (
     <>
     <div className='my-10 Skills' id='Skills'>
-      <h1 className='font-serif text-5xl'>Skills</h1>
+      <h1 className='font-serif text-5xl SkillsHeading'>Skills</h1>
     </div>
       <div className="skills-container md:mx-20 lg:mx-28 p-10">
         <div className="skills-skew-wrapper">

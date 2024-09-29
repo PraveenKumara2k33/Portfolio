@@ -35,7 +35,7 @@ const WordPressPage = () => {
     <div className="vertical-scroll-snap">
       
       <section className="stacking-slide text-start">
-        <h1 className='text-center text-3xl sm:text-5xl my-5'>WordPress Development</h1>
+        <h1 className='text-center text-3xl sm:text-5xl my-5 RestaurantHeading'>WordPress Development</h1>
         <div className='flex section1'>
         <div className='lg:w-2/4'>
           <div>

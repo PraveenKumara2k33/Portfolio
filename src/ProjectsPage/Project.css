@@ -3,7 +3,16 @@
   margin: 0;
   padding: 0;
 } */
-
+@font-face {
+  font-family: 'Wedding Text';
+  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.ProjectHeading {
+  font-family: 'Wedding Text' !important; /* Use the custom font */
+  font-size: 64px !important; /* You can adjust this size */
+}
 ul {
   list-style: none; /* Remove default list styles */
 }
@@ -182,9 +191,9 @@ ul {
   .cards__inner {
     grid-template-columns: 1fr;
   }
-  .cards__card{
+  /* .cards__card{
     font-size: 12px;
-  }
+  } */
 }
 
 /* 2 by 2 card for tablets */

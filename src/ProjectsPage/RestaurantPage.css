@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Wedding Text';
+  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.RestaurantHeading {
+  font-family: 'Wedding Text' !important; /* Use the custom font */
+  font-size:64px !important; /* You can adjust this size */
+}
 .stacking-slide {
   box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.05);
   /* background-color: white;

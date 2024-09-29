@@ -10,163 +10,108 @@
 .description {
   font-size: 1.2rem;
 }
-.typed-text{
+
+.typed-text {
   font-size: 34px;
   font-weight: 700;
 }
+
 .cursor {
   font-weight: 500;
   font-size: 1.9rem;
   color: orange;
-  /* animation: blink 0.7s step-end infinite; */
 }
 
-/* Blinking cursor animation */
-/* @keyframes blink {
-  50% {
-    opacity: 0;
-  }
-} */
-
-/* Color classes for each word */
 .color-0 {
   background: linear-gradient(120deg, rgba(45, 212, 191, 1) 0%, rgba(59, 130, 246, 1) 100%);
-  -webkit-background-clip: text; /* Ensures the background gradient is clipped to the text */
-  -webkit-text-fill-color: transparent; /* Ensures the text fill is transparent so gradient shows */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .color-1 {
   background: linear-gradient(120deg, rgba(99, 102, 241, 1) 10%, rgba(14, 165, 233, 1) 30%, rgba(16, 185, 129, 1) 90%);
-  -webkit-background-clip: text; /* Ensures the background gradient is clipped to the text */
-  -webkit-text-fill-color: transparent; /* Ensures the text fill is transparent so gradient shows */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .color-2 {
   background: linear-gradient(120deg, rgba(99, 102, 241, 1) 0%, rgba(168, 85, 247, 1) 50%, rgba(236, 72, 153, 1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* .heroimg{
-  display: block;
-  width: 130px;
-  height: 175px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-} */
-.download{
+
+.download {
   border-radius: 50%;
 }
+
 .fade-in-left {
   animation: fade-in-left 2s ease infinite;
 }
 
 @keyframes fade-in-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-    color: #6366f1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    color: #06b6d4;
-  }
+  0% { opacity: 0; transform: translateX(-20px); color: #6366f1; }
+  100% { opacity: 1; transform: translateX(0); color: #06b6d4; }
 }
 
 .shine-text {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); */
   padding: 12px 48px;
   color: #ffffff;
   background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
   background-position: 0;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
   white-space: nowrap;
 }
 
-@keyframes shine{
-  0%{
-    background-position: 0;}
-  60%{
-    background-position: 100px;}
-  100%{
-    background-position: 110px;}
-}
-/* .blink-eye {
-  animation: blink 1.5s infinite;
+@keyframes shine {
+  0% { background-position: 0; }
+  60% { background-position: 100px; }
+  100% { background-position: 110px; }
 }
 
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;  Full visibility 
-  }
-  50% {
-    opacity: 0;  Invisible at mid-point 
-  }
-} */
 .divlinks a {
-  transition: all 0.3s ease-in-out; /* Transition effect for smooth animation */
+  transition: all 0.3s ease-in-out;
 }
 
 .divlinks a:hover {
-  transform: translateY(-4px) scale(1.1); /* Scale and lift effect on hover */
+  transform: translateY(-4px) scale(1.1);
 }
 
-.divlinks a:nth-child(1):hover {
-  background-color: #0077B5; /* LinkedIn background */
-  color: white; /* Ensure icon stays visible */
-}
-
-.divlinks a:nth-child(2):hover {
-  background-color: #333333; /* GitHub background */
-  color: white;
-}
-
-.divlinks a:nth-child(3):hover {
-  background-color: #00EA64; /* HackerRank background */
-  color: white;
-}
-
-.divlinks a:nth-child(4):hover {
-  background-color: #FFA116; /* LeetCode background */
-  color: white;
-}
-.divlinks a:nth-child(5):hover {
-  background-color: #399BCE; /* LeetCode background */
-  color: white;
-}
-.divlinks a:nth-child(6):hover {
-  background-color: #C13584; /* Instagram background */
-  color: white;
-}
+.divlinks a:nth-child(1):hover { background-color: #0077B5; color: white; }
+.divlinks a:nth-child(2):hover { background-color: #333333; color: white; }
+.divlinks a:nth-child(3):hover { background-color: #00EA64; color: white; }
+.divlinks a:nth-child(4):hover { background-color: #FFA116; color: white; }
+.divlinks a:nth-child(5):hover { background-color: #399BCE; color: white; }
+.divlinks a:nth-child(6):hover { background-color: #C13584; color: white; }
 
 .heroimg {
   box-shadow: 0 0 15px rgba(56, 187, 185, 1), 0 0 30px rgba(56, 187, 185, 1), 0 0 45px rgba(56, 187, 185, 1), 0 0 60px rgba(56, 187, 185, 0.7), 0 0 75px rgba(56, 187, 185, 0.5);
   filter: brightness(1.1);
-  transition: box-shadow 0.4s ease, transform 0.4s ease; /* For smooth transition */
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
 .heroimg:hover {
   box-shadow: 0 0 20px rgba(56, 187, 185, 1), 0 0 40px rgba(56, 187, 185, 1), 0 0 60px rgba(56, 187, 185, 1), 0 0 80px rgba(56, 187, 185, 0.8), 0 0 100px rgba(56, 187, 185, 0.6);
-  transform: scale(1.05); /* Slight scale on hover */
+  transform: scale(1.05);
 }
-/* Media query for mobile devices (320px to 425px) */
-@media (max-width: 600px){
-  .text-section{
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .text-section {
     margin-top: 30px;
   }
-  .divlinks>a{
+  .divlinks a {
     padding: 8px;
   }
-  .abouticon{
+  .abouticon {
     font-size: 14px;
   }
 }

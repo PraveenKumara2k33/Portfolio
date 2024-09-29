@@ -48,7 +48,7 @@ const ECommercePage = () => {
     <div className="vertical-scroll-snap">
       
       <section className="stacking-slide text-start">
-        <h1 className='text-center text-3xl sm:text-5xl my-5'>Web Development</h1>
+        <h1 className='text-center text-3xl sm:text-5xl my-5 RestaurantHeading'>Web Development</h1>
         <div className='flex section1'>
         <div className='lg:w-2/4 widthimg'>
           <div>

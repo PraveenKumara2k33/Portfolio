@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Wedding Text';
+  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Qualification {
+  font-family: 'Wedding Text',serif !important; /* Use the custom font */
+  font-size: 64px !important; /* You can adjust this size */
+}
 
 @layer components{
     .vertical-timeline-element-title, .vertical-timeline-element-subtitle, .vertical-timeline-element-description, .vertical-timeline-element-extra-description{

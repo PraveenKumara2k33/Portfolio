@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Wedding Text';
+  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.PublicationHeading {
+  font-family: 'Wedding Text' !important; /* Use the custom font */
+  font-size: 64px !important; /* You can adjust this size */
+}
 .accordion-button {
   background-color: black;
   color: white;
@@ -33,16 +43,35 @@
   .iotimage{
     width: 250px;
   }  
-  .publicationbox:nth-of-type(1){
-    padding-top: 25px;
+  .publicationbox:nth-child(1){
+    font-size: 24px;
+    /* padding-top: 25px; */
+    padding: 10px;
+  }
+  .publicationbox:nth-child(2){
+    font-size: 24px;
+    padding-top: 10px;
   }
 }
-@media (max-width:500px) {
-  .publicationbox{
-    padding: 3px;
+@media (max-width:600px) {
+  .publicationbox:nth-child(1){
+    /* padding: 3px; */
     font-size: 20px;
+    /* padding-bottom: 20px; */
+    /* padding-bottom: 20px; */
+    padding: 10px;
+  }
+  .publicationbox:nth-child(2){
+    font-size: 20px;
+    padding: 10px;
   }
   .pubicon{
     font-size: 20px;
   }
+}
+@media (min-width:1024px) and (max-width:1440px){
+  .iotimage{
+    padding: 40px;
+    border-radius: 60px !important;
+  } 
 }

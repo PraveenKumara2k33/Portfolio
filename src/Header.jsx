@@ -21,7 +21,7 @@ const Header = () => {
           placement="end"
         >
           <Offcanvas.Header closeButton className='bg-cyan-50 font-serif'>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+            <Offcanvas.Title className='HeaderHeading' id={`offcanvasNavbarLabel-expand-${expand}`}>
               Portfolio
             </Offcanvas.Title>
           </Offcanvas.Header>
