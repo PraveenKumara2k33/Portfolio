@@ -92,16 +92,16 @@
 .divlinks a:nth-child(5):hover { background-color: #399BCE; color: white; }
 .divlinks a:nth-child(6):hover { background-color: #C13584; color: white; }
 
-.heroimg {
+/* .heroimg {
   box-shadow: 0 0 15px rgba(56, 187, 185, 1), 0 0 30px rgba(56, 187, 185, 1), 0 0 45px rgba(56, 187, 185, 1), 0 0 60px rgba(56, 187, 185, 0.7), 0 0 75px rgba(56, 187, 185, 0.5);
   filter: brightness(1.1);
   transition: box-shadow 0.4s ease, transform 0.4s ease;
-}
+} */
 
-.heroimg:hover {
+/* .heroimg:hover {
   box-shadow: 0 0 20px rgba(56, 187, 185, 1), 0 0 40px rgba(56, 187, 185, 1), 0 0 60px rgba(56, 187, 185, 1), 0 0 80px rgba(56, 187, 185, 0.8), 0 0 100px rgba(56, 187, 185, 0.6);
   transform: scale(1.05);
-}
+} */
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {

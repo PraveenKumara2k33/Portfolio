@@ -33,7 +33,7 @@
 }
 
 .stacking-slide .box {
-  background-color: hsl(190, 100%, 68%);
+  background-color: hsla(190, 100%, 68%, 0.6);
   /* padding-bottom: 200px; */
   width: 300px;
   height: 300px;

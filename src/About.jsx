@@ -12,7 +12,7 @@ import './About.css';
 
 const Hero = () => {
   const [text, setText] = useState('Web Developer'); // Initial text
-  const words = ['Web Developer', 'Java Specialist', 'WordPress Developer']; // Array of words to type
+  const words = ['Web Developer', 'Java Specialist', 'Software Developer']; // Array of words to type
   const [wordIndex, setWordIndex] = useState(0); // Track the index of the word
   const [isDeleting, setIsDeleting] = useState(false); // Track if it's typing or deleting
   const [typingSpeed, setTypingSpeed] = useState(150); // Control typing speed

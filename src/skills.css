@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Wedding Text';
-  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-.SkillsHeading {
-  font-family: 'Wedding Text' !important; /* Use the custom font */
-  font-size: 64px !important; /* You can adjust this size */
-}
 .skills-container {
   overflow: hidden; /* Ensure content stays inside the container */
   position: relative;

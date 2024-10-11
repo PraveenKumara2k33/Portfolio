@@ -2,80 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .bg-custom {
-    background-color: #e3f3f3;
-} */
-@font-face {
+/* @font-face {
     font-family: 'Wedding Text';
     src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-  }
-  .HeaderHeading {
-    font-family: 'Wedding Text' !important; /* Use the custom font */
-    font-size: 32px !important; /* You can adjust this size */
-  }
+}
+
+.HeaderHeading {
+    font-family: 'Wedding Text' !important;
+    font-size: 32px !important;
+} */
+
 .navbar-logo {
-    width: 50px; 
+    width: 50px;
     height: auto;
     border-radius: 50%;
 }
 
 @layer components {
     .navbtn {
-      @apply px-4 font-medium !important;
-      transition: all 0.5s ease-in-out;
+        @apply px-4 py-2 font-medium transition-all duration-500 ease-in-out rounded-3xl;
+        color: black !important; /* Ensure black text color */
     }
 
     .navbtn:hover {
-      @apply border-sky-100 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-3xl transition duration-700 ease-in-out;
+        @apply border-sky-100 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-3xl;
     }
 
     .navbtn.active {
-      @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-3xl !important; /* Increased specificity */
+        @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-3xl;
     }
 
     .navbtn.active:hover {
-      @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white !important; /* Ensure hover state stays white */
+        @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white ;
     }
 
-    /* Media query for mobile devices (320px to 425px) */
+    /* Offcanvas styling */
+    @media (max-width: 1024px) {
+        .offcanvas-menu {
+            @apply fixed top-0 right-0 w-3/4 h-full bg-cyan-50 shadow-lg z-50 transition-transform duration-300 ease-in-out;
+        }
+
+        .offcanvas-menu.closed {
+            @apply transform translate-x-full;
+        }
+
+        .offcanvas-menu.open {
+            @apply transform translate-x-0;
+        }
+    }
+
     @media (max-width: 425px) {
-        /* Add staggered transition delay for each section */
-        .navbtn{
-            @apply font-serif;
-        }
-        .navbtn:nth-child(1) {
-            transition-delay: 0.1s;
+        .navbtn {
+            @apply font-serif w-full text-left; /* Full width and left aligned */
         }
 
-        .navbtn:nth-child(2) {
-            transition-delay: 0.2s;
-        }
-
-        .navbtn:nth-child(3) {
-            transition-delay: 0.3s;
-        }
-
-        .navbtn:nth-child(4) {
-            transition-delay: 0.4s;
-        }
-
-        .navbtn:nth-child(5) {
-            transition-delay: 0.5s;
-        }
-
-        .navbtn:nth-child(6) {
-            transition-delay: 0.6s;
-        }
-
-        /* Add zoom effect on hover */
         .navbtn:hover {
-            transform: scale(1.1); /* Zoom in */
+            transform: scale(1.1);
         }
 
         .navbtn.active:hover {
-            transform: scale(1.05); /* Slightly zoom when active */
+            transform: scale(1.05);
         }
     }
 }
