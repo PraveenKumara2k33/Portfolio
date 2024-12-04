@@ -3,6 +3,8 @@
     padding: 40px 0;
     background-color: #111;
     color: white;
+    box-shadow: rgba(106, 106, 255, 0.485) 0px -50px 100px -20px, rgba(0, 0, 0, 0.3) 0px -30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
   }
   
   .footer-heading {
@@ -95,8 +97,5 @@
     }
     .footer-text{
       font-size: 12px;
-    }
-    .footer-text{
-      font-size: 14px;
     }
   }

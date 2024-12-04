@@ -24,8 +24,8 @@ const typeIconMapping = {
 const routeMapping = {
   'Cognizant Technology Solutions': '/cognizant',
   'Senchola Technology Solutions': '/senchola',
-  'Velammal Institute of Technology': '/velammal',
-  'Ayyanar Matric Higher Secondary School': '/ayyanar',
+  'Velammal Institute of Technology': '/',
+  'Ayyanar Matric Higher Secondary School': '/',
   'Internpe': '/internpe',
 };
 

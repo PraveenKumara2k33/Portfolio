@@ -22,18 +22,18 @@ const Footer = () => {
           <Col md={4} xs={5}>
             <h4 className="footer-heading">NavBar</h4>
             <Nav className="footer-nav">
-              <Nav.Link as={Link} smooth to="/#" className="footer-text">Home</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#qualification" className="footer-text">Qualification</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#skills" className="footer-text">Skills</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#projects" className="footer-text">Projects</Nav.Link>
-              <Nav.Link as={Link} smooth to="/#publication" className="footer-text">Publications</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#" className="footer-text hover:text-indigo-500">Home</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#qualification" className="footer-text hover:text-indigo-500">Qualification</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#skills" className="footer-text hover:text-indigo-500">Skills</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#projects" className="footer-text hover:text-indigo-500">Projects</Nav.Link>
+              <Nav.Link as={Link} smooth to="/#publication" className="footer-text hover:text-indigo-500">Publications</Nav.Link>
             </Nav>
           </Col>
 
           <Col md={4} xs={5}>
             <h4 className="footer-heading">About</h4>
             <p className="footer-text">
-              I create user-centered, responsive applications and craft innovative solutions that drive business growth and enhance brand awareness.
+            A dedicated Software Developer skilled in building efficient, scalable, and user-friendly applications. Proficient in modern web technologies and passionate about solving complex problems with innovative solutions. Driven to create impactful software that enhances user experiences.
             </p>
           </Col>
 

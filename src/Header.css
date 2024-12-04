@@ -23,20 +23,26 @@
 @layer components {
     .navbtn {
         @apply px-4 py-2 font-medium transition-all duration-500 ease-in-out rounded-3xl;
-        color: black !important; /* Ensure black text color */
+        color: whitesmoke ; 
     }
-
-    .navbtn:hover {
+    .header{
+        box-shadow: rgba(106, 106, 255, 0.485) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    /* .navbtn:hover{
+        @apply text-white;
+    } */
+    
+    /* .navbtn:hover {
         @apply border-sky-100 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-3xl;
-    }
+    } */
 
-    .navbtn.active {
+    /* .navbtn.active {
         @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-3xl;
     }
 
     .navbtn.active:hover {
         @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white ;
-    }
+    } */
 
     /* Offcanvas styling */
     @media (max-width: 1024px) {

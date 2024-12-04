@@ -9,8 +9,8 @@ import Publication from './Publication';
 import Footer from './Footer';
 import CognizantPage from './QualificationPage/CognizantPage';
 import SencholaPage from './QualificationPage/SencholaPage';
-import VelammalPage from './QualificationPage/VelammalPage';
-import AyyanarPage from './QualificationPage/AyyanarPage';
+// import VelammalPage from './QualificationPage/VelammalPage';
+// import AyyanarPage from './QualificationPage/AyyanarPage';
 import InternpePage from './QualificationPage/InternpePage';
 import RestaurantPage from './ProjectsPage/RestaurantPage'; 
 import ChatApplicationPage from './ProjectsPage/ChatApplicationPage'; 
@@ -43,8 +43,8 @@ function App() {
         {/* Other individual pages */}
         <Route path="/cognizant" element={<CognizantPage />} />
         <Route path="/senchola" element={<SencholaPage />} />
-        <Route path="/velammal" element={<VelammalPage />} />
-        <Route path="/ayyanar" element={<AyyanarPage />} />
+        {/* <Route path="/velammal" element={<VelammalPage />} />
+        <Route path="/ayyanar" element={<AyyanarPage />} /> */}
         <Route path="/internpe" element={<InternpePage />} />
         <Route path="/Restaurant" element={<RestaurantPage />} />
         <Route path="/ChatApplication" element={<ChatApplicationPage />} />

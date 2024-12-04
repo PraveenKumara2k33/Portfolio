@@ -29,6 +29,10 @@
 .accordion-body li {
   margin-bottom: 10px;
 }
+.publication-border{
+  border: 2px solid indigo;
+  padding: 15px;
+}
 @media (max-width:768px) {
   .iotimage{
     width: 250px;
