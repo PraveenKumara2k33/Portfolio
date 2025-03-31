@@ -58,7 +58,7 @@ const Hero = () => {
       <a href="https://www.hackerrank.com/profile/apraveenkumar720" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaHackerrank className='abouticon' /></a>
       <a href="https://leetcode.com/u/apraveenkumar/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><SiLeetcode className='abouticon' /></a>
       <a href="https://www.skillrack.com/faces/resume.xhtml?id=320627&key=b613186118ca2f8cfe1ceba5d9d4b9614c38cfda" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><TbLetterS className='abouticon' /></a>
-      <a href="https://www.instagram.com/apk2k/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaInstagram className='abouticon' /></a>
+      <a href="https://www.instagram.com/pravxxn_verse/" target="_blank" className="border sm:p-3 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><FaInstagram className='abouticon' /></a>
     </div>
 
     <div className="flex py-7">
