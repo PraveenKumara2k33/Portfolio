@@ -85,10 +85,10 @@ ul {
   text-align: start;
 }
 .bullet-icon {
-  width: 24px !important;  /* Set the desired fixed width */
+  width: 24px !important; /* Set the desired fixed width */
   height: 24px !important; /* Set the desired fixed height */
   font-size: 24px !important; /* Ensure consistent icon size */
-  flex-shrink: 0;  /* Prevent shrinking in flex containers */
+  flex-shrink: 0; /* Prevent shrinking in flex containers */
 }
 
 .card__bullets .bullet-icon {
