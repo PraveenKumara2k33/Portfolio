@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Wedding Text';
-  src: url('../fonts/Wedding Text Std Regular.otf') format('opentype');
+  font-family: "Wedding Text";
+  src: url("../fonts/Wedding Text Std Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 .RestaurantHeading {
-  font-family: 'Wedding Text' !important; /* Use the custom font */
-  font-size:64px !important; /* You can adjust this size */
+  font-family: "Wedding Text" !important; /* Use the custom font */
+  font-size: 64px !important; /* You can adjust this size */
 }
 .stacking-slide {
   box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.05);
@@ -41,7 +41,7 @@
   box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.imgcoverbox{
+.imgcoverbox {
   width: 300px;
   height: inherit;
   object-fit: fill;
@@ -88,7 +88,7 @@
   scroll-snap-align: start; /* Aligns sections for scroll snapping */
   width: 100%; /* Full width of the viewport */
 }
-.image{
+.image {
   width: 600px;
   height: 400px;
   border-radius: 10px;
@@ -99,39 +99,39 @@
 *:after {
   box-sizing: border-box;
 }
-@media (max-width: 768px){
-  .stacking-slide{
+@media (max-width: 768px) {
+  .stacking-slide {
     height: 100%;
   }
-  .section1{
+  .section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .image{
+  .image {
     width: 100%;
-    
+
     height: 50%;
     margin-bottom: 20px;
   }
-  .ebill>.image{
-  height: 400px;
-  width: 500px;
+  .ebill > .image {
+    height: 400px;
+    width: 500px;
   }
-  .chat>.image{
+  .chat > .image {
     height: 400px;
   }
-  .e-commerce>.image{
+  .e-commerce > .image {
     height: 400px;
     width: 550px;
   }
-  .ec-buy>.image{
+  .ec-buy > .image {
     height: 380px;
     width: 450px;
   }
 }
-@media (max-width:480px) {
-  .RestaurantHeading{
+@media (max-width: 480px) {
+  .RestaurantHeading {
     font-size: 40px !important; /* Adjust font size for smaller screens */
   }
 }
