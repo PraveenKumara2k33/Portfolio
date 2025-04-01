@@ -15,28 +15,30 @@
 } */
 
 .navbar-logo {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
 }
 
 @layer components {
-    .navbtn {
-        @apply px-4 py-2 font-medium transition-all duration-500 ease-in-out rounded-3xl;
-        color: whitesmoke ; 
-    }
-    .header{
-        box-shadow: rgba(106, 106, 255, 0.485) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-    /* .navbtn:hover{
+  .navbtn {
+    @apply px-4 py-2 font-medium transition-all duration-500 ease-in-out rounded-3xl;
+    color: whitesmoke;
+  }
+  .header {
+    box-shadow: rgba(106, 106, 255, 0.485) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  /* .navbtn:hover{
         @apply text-white;
     } */
-    
-    /* .navbtn:hover {
+
+  /* .navbtn:hover {
         @apply border-sky-100 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-3xl;
     } */
 
-    /* .navbtn.active {
+  /* .navbtn.active {
         @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-3xl;
     }
 
@@ -44,32 +46,32 @@
         @apply bg-gradient-to-r from-blue-500 to-cyan-500 text-white ;
     } */
 
-    /* Offcanvas styling */
-    @media (max-width: 1024px) {
-        .offcanvas-menu {
-            @apply fixed top-0 right-0 w-3/4 h-full bg-cyan-50 shadow-lg z-50 transition-transform duration-300 ease-in-out;
-        }
-
-        .offcanvas-menu.closed {
-            @apply transform translate-x-full;
-        }
-
-        .offcanvas-menu.open {
-            @apply transform translate-x-0;
-        }
+  /* Offcanvas styling */
+  @media (max-width: 1024px) {
+    .offcanvas-menu {
+      @apply fixed top-0 right-0 w-3/4 h-full bg-cyan-50 shadow-lg z-50 transition-transform duration-300 ease-in-out;
     }
 
-    @media (max-width: 425px) {
-        .navbtn {
-            @apply font-serif w-full text-left; /* Full width and left aligned */
-        }
-
-        .navbtn:hover {
-            transform: scale(1.1);
-        }
-
-        .navbtn.active:hover {
-            transform: scale(1.05);
-        }
+    .offcanvas-menu.closed {
+      @apply transform translate-x-full;
     }
+
+    .offcanvas-menu.open {
+      @apply transform translate-x-0;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .navbtn {
+      @apply font-serif w-full text-left; /* Full width and left aligned */
+    }
+
+    .navbtn:hover {
+      transform: scale(1.1);
+    }
+
+    .navbtn.active:hover {
+      transform: scale(1.05);
+    }
+  }
 }
