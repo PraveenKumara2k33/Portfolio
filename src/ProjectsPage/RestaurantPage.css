@@ -130,3 +130,8 @@
     width: 450px;
   }
 }
+@media (max-width:480px) {
+  .RestaurantHeading{
+    font-size: 40px !important; /* Adjust font size for smaller screens */
+  }
+}
