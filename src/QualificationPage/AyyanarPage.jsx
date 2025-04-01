@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
-import './VelammalPage.css'; // Link to the custom CSS file
+import "./VelammalPage.css"; // Link to the custom CSS file
 
 const AyyanarPage = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +30,14 @@ const AyyanarPage = () => {
       bar: { distributed: true },
     },
     xaxis: {
-      categories: ["Tamil", "English", "Maths", "Physics", "Chemistry", "Computer Science"],
+      categories: [
+        "Tamil",
+        "English",
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "Computer Science",
+      ],
       title: { text: "Subjects", style: { color: "#ffffff" } },
       labels: { style: { colors: "#ffffff" } },
     },
@@ -38,7 +45,10 @@ const AyyanarPage = () => {
       min: 0,
       max: 100,
       tickAmount: 5,
-      labels: { formatter: (val) => parseInt(val), style: { colors: "#ffffff" } },
+      labels: {
+        formatter: (val) => parseInt(val),
+        style: { colors: "#ffffff" },
+      },
       title: { text: "Marks", style: { color: "#ffffff" } },
     },
     grid: { borderColor: "#ffffff", strokeDashArray: 4 },
@@ -50,14 +60,21 @@ const AyyanarPage = () => {
       toolbar: { show: false },
       foreColor: "#ffffff",
     },
-    labels: ["Tamil", "English", "Maths", "Physics", "Chemistry", "Computer Science"],
+    labels: [
+      "Tamil",
+      "English",
+      "Maths",
+      "Physics",
+      "Chemistry",
+      "Computer Science",
+    ],
     dataLabels: {
       enabled: true,
       formatter: function (val, opts) {
         return opts.w.config.series[opts.seriesIndex]; // Display the exact value
       },
       style: {
-        fontSize: '16px',
+        fontSize: "16px",
         colors: ["#ffffff"], // Label color
       },
     },
@@ -75,15 +92,35 @@ const AyyanarPage = () => {
     <div className="velammal-page">
       <div className="flex flex-wrap">
         {[
-          { series: hsc2Series, title: "HSC +2", percentage: "75.5%", duration: "May 2018 – Mar 2019" },
-          { series: hsc1Series, title: "HSC +1", percentage: "70%", duration: "May 2017 – Mar 2018" },
-          { series: sslcSeries, title: "SSLC 10th", percentage: "87.2%", duration: "May 2016 – Apr 2017" },
+          {
+            series: hsc2Series,
+            title: "HSC +2",
+            percentage: "75.5%",
+            duration: "May 2018 – Mar 2019",
+          },
+          {
+            series: hsc1Series,
+            title: "HSC +1",
+            percentage: "70%",
+            duration: "May 2017 – Mar 2018",
+          },
+          {
+            series: sslcSeries,
+            title: "SSLC 10th",
+            percentage: "87.2%",
+            duration: "May 2016 – Apr 2017",
+          },
         ].map(({ series, title, percentage, duration }) => (
-          <div key={title} className="flex flex-col lg:flex-row mb-5 AyyanarPage">
+          <div
+            key={title}
+            className="flex flex-col lg:flex-row mb-5 AyyanarPage"
+          >
             <div className="velammal-chart Ayyanar-chart">
               <Chart
                 options={isMobile ? donutOptions : barOptions}
-                series={isMobile ? series : [{ name: `${title} Marks`, data: series }]}
+                series={
+                  isMobile ? series : [{ name: `${title} Marks`, data: series }]
+                }
                 type={chartType}
               />
             </div>
@@ -92,10 +129,19 @@ const AyyanarPage = () => {
                 Ayyanar Matric Higher Secondary School
               </h1>
               <div className="mt-3">
-                <h3><strong>Degree:</strong> Higher Secondary Certificate ({title})</h3>
-                <p><strong>Stream:</strong> Computer Science</p>
-                <p><strong>Duration:</strong> {duration}</p>
-                <p><strong>Percentage:</strong> {percentage}</p>
+                <h3>
+                  <strong>Degree:</strong> Higher Secondary Certificate ({title}
+                  )
+                </h3>
+                <p>
+                  <strong>Stream:</strong> Computer Science
+                </p>
+                <p>
+                  <strong>Duration:</strong> {duration}
+                </p>
+                <p>
+                  <strong>Percentage:</strong> {percentage}
+                </p>
               </div>
             </div>
           </div>
