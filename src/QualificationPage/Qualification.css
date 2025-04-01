@@ -2,53 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@layer components{
-    .vertical-timeline-element-title, .vertical-timeline-element-subtitle, .vertical-timeline-element-description, .vertical-timeline-element-extra-description{
-        @apply text-black font-serif font-medium text-left;    
-    }
-    .vertical-timeline-element-title{
-        @apply  text-2xl;
-    }
-    .vertical-timeline-element-subtitle{
-        @apply text-lg;
-    }
+@layer components {
+  .vertical-timeline-element-title,
+  .vertical-timeline-element-subtitle,
+  .vertical-timeline-element-description,
+  .vertical-timeline-element-extra-description {
+    @apply text-black font-serif font-medium text-left;
+  }
+  .vertical-timeline-element-title {
+    @apply text-2xl;
+  }
+  .vertical-timeline-element-subtitle {
+    @apply text-lg;
+  }
 }
 .vertical-timeline-element-description {
-    margin-bottom: 10px;
-  }
-  
-  .vertical-timeline-element-extra-description {
-    margin-top: 10px;
-    font-style: italic;
-  }
-  
-  .read-more-button {
-    background-color: #2196F3; /* Customize button color */
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .read-more-button:hover {
-    background-color: #1976D2; /* Customize hover color */
-  }
-  @media (max-width: 1024px) {
-  .vertical-timeline-element-date{
+  margin-bottom: 10px;
+}
+
+.vertical-timeline-element-extra-description {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.read-more-button {
+  background-color: #2196f3; /* Customize button color */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #1976d2; /* Customize hover color */
+}
+@media (max-width: 1024px) {
+  .vertical-timeline-element-date {
     color: black;
   }
 }
-  @media only screen and (min-width: 1170px) {
-    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-        position: absolute;
-        width: 100%;
-        left: 95%;
-        top: 6px;
-        font-size: 16px;
-        font-size: 1rem;
-    }
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 95%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
