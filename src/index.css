@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 #root {
   margin: 0;
   padding: 0;
@@ -11,11 +10,11 @@
   font-family: serif;
   color: white;
 }
-:root{
+:root {
   --apk-theme-primary: #8750f7;
-  --apk-theme-secondary:#2a1454;
+  --apk-theme-secondary: #2a1454;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -25,7 +24,8 @@
 }
 /* App.css or global CSS */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   cursor: default; /* Ensure the default cursor */
