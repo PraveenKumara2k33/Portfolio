@@ -29,43 +29,43 @@
 .accordion-body li {
   margin-bottom: 10px;
 }
-.publication-border{
+.publication-border {
   border: 2px solid indigo;
   padding: 15px;
 }
-@media (max-width:768px) {
-  .iotimage{
+@media (max-width: 768px) {
+  .iotimage {
     width: 250px;
-  }  
-  .publicationbox:nth-child(1){
+  }
+  .publicationbox:nth-child(1) {
     font-size: 24px;
     /* padding-top: 25px; */
     padding: 10px;
   }
-  .publicationbox:nth-child(2){
+  .publicationbox:nth-child(2) {
     font-size: 24px;
     padding-top: 10px;
   }
 }
-@media (max-width:600px) {
-  .publicationbox:nth-child(1){
+@media (max-width: 600px) {
+  .publicationbox:nth-child(1) {
     /* padding: 3px; */
     font-size: 20px;
     /* padding-bottom: 20px; */
     /* padding-bottom: 20px; */
     padding: 10px;
   }
-  .publicationbox:nth-child(2){
+  .publicationbox:nth-child(2) {
     font-size: 20px;
     padding: 10px;
   }
-  .pubicon{
+  .pubicon {
     font-size: 20px;
   }
 }
-@media (min-width:1024px) and (max-width:1440px){
-  .iotimage{
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .iotimage {
     padding: 40px;
     border-radius: 60px !important;
-  } 
+  }
 }
