@@ -16,6 +16,7 @@ const Hero = () => {
   const [wordIndex, setWordIndex] = useState(0); // Track the index of the word
   const [isDeleting, setIsDeleting] = useState(false); // Track if it's typing or deleting
   const [typingSpeed, setTypingSpeed] = useState(150); // Control typing speed
+  const [showSecondImage, setShowSecondImage] = useState(false); // State to control image display
 
   useEffect(() => {
     const handleType = () => {
@@ -39,6 +40,14 @@ const Hero = () => {
     const typingTimeout = setTimeout(handleType, typingSpeed);
     return () => clearTimeout(typingTimeout); // Clean up timeout
   }, [text, isDeleting, typingSpeed, wordIndex, words]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowSecondImage((prev) => !prev);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
 <div className="hero-container flex flex-col-reverse md:flex-row md:justify-between space-x-0 md:space-x-40 about" id='about'>
@@ -74,7 +83,10 @@ const Hero = () => {
           <FaEye className="blink-eye" />
         </a>
         {/* Link to download PDF */}
-        <a href="../img/Praveenkumar_A_Resume.pdf" download className="download text-indigo-500 font-bold animate-bounce border p-3 bg-white text-lg">
+        {/* <a href="../img/Praveenkumar_A_Resume.pdf" download className="download text-indigo-500 font-bold animate-bounce border p-3 bg-white text-lg">
+          <FaArrowDown />
+        </a> */}
+        <a href="../img/Praveenkumar_A_Resume.pdf" download className="download text-indigo-500 font-bold border p-3 bg-white text-lg">
           <FaArrowDown />
         </a>
       </div>
@@ -82,11 +94,18 @@ const Hero = () => {
   </div>
 
   <div className="w-full md:w-1/2 mt-4 md:mt-0">
-    <img
-      src="../img/PraveenKumar.jpeg"
+    {/* <img
+      src={showSecondImage ? "../img/APraveenKumar.png" : "../img/PraveenKumar.jpeg"}
       className="w-64 mx-auto mb-8 rounded-full heroimg"
       alt="PraveenKumar A"
-    />
+    /> */}
+    <img
+        src={showSecondImage ? "../img/APraveenKumar.png" : "../img/PraveenKumar.jpeg"}
+        className={`mx-auto mb-8 rounded-full heroimg ${
+          showSecondImage ? "h-80 w-64" : "h-80 w-64 "
+        }`}
+        alt="PraveenKumar A"
+      />
   </div>
 </div>
 
