@@ -100,7 +100,7 @@ const Hero = () => {
       alt="PraveenKumar A"
     /> */}
     <img
-        src={showSecondImage ? "../img/APraveenKumar.png" : "../img/PraveenKumar.jpeg"}
+        src={showSecondImage ? "../img/APraveenKumar.png" : "../img/praveenkumara.jpg"}
         className={`mx-auto mb-8 rounded-full heroimg ${
           showSecondImage ? "h-80 w-64" : "h-80 w-64 "
         }`}
