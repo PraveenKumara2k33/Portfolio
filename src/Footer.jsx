@@ -95,7 +95,7 @@ const Footer = () => {
                 <h4 className="footer-heading">Follow Us</h4>
                 <div className="footer-icons">
                   <a
-                    href="https://www.instagram.com/apk2k/"
+                    href="https://www.instagram.com/pravxxn_verse/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
